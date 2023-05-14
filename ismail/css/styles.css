@@ -1,6 +1,6 @@
 :root {
     --clr-text: #444444;
-    --clr-primary: #e2e280;
+    --clr-primary: #80e2ac;
     --clr-accent: #db5d5d;
 
     --ff-title: "Broadway", bold;
@@ -21,6 +21,10 @@ html {
     font-size: 1.125rem;
 }
 
+body {
+    margin: 0;
+}
+
 /*Typography*/
 h1, h2, h3, h4, p {
     margin: 0;
@@ -36,4 +40,71 @@ h2 {
 }
 p {
     margin-bottom: .75em;
+}
+
+.logo {
+    font-family: var(--logo);
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    padding: 1em 0 2em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*justify-content: space-between;*/
+    background-color: #868686;
+    flex-direction: column;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: var(--clr-primary);
+    text-decoration: none;
+    background-color: #444444;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+.btn-primary {
+    background: var(--clr-primary);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: .75em 2.5em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-group {
+    display: flex;
+}
+
+.btn + .btn {
+    margin-left: 0.5em;
+}
+
+.products .product {
+    display: flex;
+    margin: 20px;
+}
+
+.products .product img {
+    display: flex;
+    width: 40%;
 }
